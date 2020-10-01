@@ -1,0 +1,9 @@
+version: '3'
+services:
+    authentication:
+        build: .
+        ports:
+            - "8080:80"
+        environment:
+            - JWT_SECRET=12345678
+
